@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>Wedding Invitation</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Monoton|Nothing+You+Could+Do" rel="stylesheet">
+  </head>
+  <body>
+    <header id="wed">Wedding Invitation Designer</header>
+    <div class="x">
+      <div id="styles">
+        <span id="sand" onclick="styleFunction1();">Sand</span>
+        <span id="lights" onclick="styleFunction2();">Lights</span>
+        <span id="book" onclick="styleFunction3();">Book</span>
+      </div>
+      <form action="/action_page.php"> 
+        <label for="fname" id="fname">Partner 1</label>
+        <input oninput="formEntry()" type="text" id="name1">
+        <label for="sname" id="sname">Partner 2</label>
+        <input oninput="formEntry()" type="text" id="name2">
+        <label for="lname" id="lname">Last Name</label>
+        <input oninput="formEntry()" type="text" id="nameL">
+        <label for="dat" id="dat">Date</label>
+        <input oninput="formEntry()" type="text" id="date">
+        <label for="loc" id="loc">Wedding location</label>
+        <input oninput="formEntry()" type="text" id="location">
+      </form>
+    </div>
+    <div id="invite" class="style1">
+        <p id="rsvp">R.S.V.P</p>
+        <p id="welcome">You are cordially invited to the wedding of</p>
+        <p id="and"><span id="n1"></span><span> and </span><span id="n2"></span></p>
+        <p id="la"></p>
+        <p id="da"></p>
+        <p id="lo"></p>
+    </div>
+    <div><footer id="foot">&copy; Steph Phillips 2019</footer></div>
+  </body>
+</html>
